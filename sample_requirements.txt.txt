@@ -1,0 +1,100 @@
+1️⃣ Overview
+
+The Trade Details module is part of the Fund Operations portal for portfolio managers, compliance officers, and fund accountants.
+The UI must let users search, review, and verify trade records for all asset classes (Equities, Bonds, FX, Derivatives).
+
+Primary Goals
+
+View full trade lifecycle (Capture → Approval → Settlement → Reconciliation).
+
+Filter trades by fund, counterparty, status, or settlement date.
+
+Drill into individual trade details for audit or corrections.
+
+Export trades to Excel / PDF for reporting.
+
+2️⃣ Platform & Tone
+
+Platform: Web app (responsive for tablet use).
+
+Tone / Look: Clean, institutional, finance-grade — dark navy + accent blue.
+
+Typography: Roboto / Inter.
+
+Layout density: Medium-compact (fit 20–30 rows per viewport).
+
+3️⃣ Core Screen: Trade Details Dashboard
+
+Sections
+
+▪ Header Bar
+
+Logo (left), module title “Trade Details”.
+
+Right side: search box, bell icon for alerts, user avatar with dropdown.
+
+▪ Filter Panel
+
+Filters:
+
+Date Range (From / To)
+
+Fund dropdown
+
+Asset Class (multi-select chips)
+
+Counterparty dropdown
+
+Trade Status (dropdown: Captured / Approved / Settled / Cancelled)
+
+“Apply Filters” / “Reset” buttons.
+
+Collapsible panel.
+
+▪ Trade List Table
+
+Columns:
+| Trade ID | Fund Name | Asset Class | Security Name | Trade Date | Settle Date | Quantity | Price | Counterparty | Status |
+Row actions: eye (View Details), ✎ (Edit if pending).
+✅ Column sorting.
+✅ Pagination + page size selector (bottom right).
+✅ Hover state for rows.
+
+▪ Trade Detail Modal / Drawer
+
+Opens when clicking “View Details”.
+Shows:
+
+Basic Info (Trade ID, Fund, Counterparty, Status)
+
+Instrument Details (Ticker, ISIN, Asset Class)
+
+Quantities & Prices (Block + Net Amounts)
+
+Lifecycle Timeline (Capture → Approval → Settlement → Reconciliation → Archived)
+
+Audit Log (table with User, Action, Timestamp)
+
+Include “Download Trade PDF” button.
+
+▪ Footer / Summary
+
+Display total trades filtered and aggregate nominal value.
+
+4️⃣ Accessibility / UX Notes
+
+Keyboard navigation for table.
+
+Tooltip for abbreviations (ISIN, FX).
+
+Contrast ≥ 4.5 : 1.
+
+Minimum target size 44×44 px.
+
+5️⃣ Future Extensions
+
+Add “Reconciliation Status” column.
+
+Embed live NAV impact chart (panel right).
+
+Integrate with Approval workflow API.

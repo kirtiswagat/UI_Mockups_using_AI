@@ -1,0 +1,10 @@
+{
+  "name": "UI Mockups Importer (MVP)",
+  "id": "ui-mockups-importer-mvp",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": [
+    "figma"
+  ],
+  "ui": "ui.html"
+}
